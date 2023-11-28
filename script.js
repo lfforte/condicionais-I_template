@@ -48,12 +48,14 @@ verificaIdade(idadePessoa); */
 //######-------------------Prática extra -----------------#####
 
 const media = (media) => {
-  if (media >= 5) {
-    alert("Aprovado!!!");
-  } else if ((media >= 3)) {
-    alert("Recuperação!!");
-  } else if (media < 3) {
-    alert("Reprovado!");
+  if (typeof media === "number"){
+    if (media >= 5) {
+      alert("Aprovado!!!");
+    } else if ((media >= 3)) {
+      alert("Recuperação!!");
+    } else if (media < 3) {
+      alert("Reprovado!");
+    }
   } else {
     alert("Dados Inválidos!");
   }
